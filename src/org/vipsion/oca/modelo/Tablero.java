@@ -29,6 +29,7 @@ public class Tablero {
         casillas.set(44, new Oca(45, 5));
         casillas.set(53, new Oca(54, 5));
         casillas.set(4, new Oca(5, 4));
+        casillas.set(44, new CasillaPosada(44));
         casillas.set(13, new Oca(14, 4));
         casillas.set(22, new Oca(23, 4));
         casillas.set(65, new CasillaDado(25));
@@ -37,11 +38,8 @@ public class Tablero {
         casillas.set(40, new Oca(41, 4));
         casillas.set(49, new Oca(50, 4));
         casillas.set(54, new OcaFin(59, 4));
-
-        casillas.set(60, new CasillaCalavera(60));
-
+        casillas.set(60, new casillaCalavera(60));
         casillas.set(61, new casillaCalavera(0));
-
         casillas.set(62, new Fin(63));
     }
 
