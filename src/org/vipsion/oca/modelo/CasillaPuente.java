@@ -6,7 +6,7 @@
 package org.vipsion.oca.modelo;
 
 /**
- *
+ * Clase que controla la casilla de los puentes del tablero
  * @author Alvaro
  */
 public class CasillaPuente extends Casilla{
