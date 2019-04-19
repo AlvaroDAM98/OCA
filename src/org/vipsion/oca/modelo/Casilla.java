@@ -19,14 +19,6 @@ public class Casilla {
     public Casilla(int posicion) {
         this.posicion = posicion;
     }
-    
-    public void setPosicion(int posicion){
-        this.posicion = posicion;
-    }
-    
-    public int getPosicion(){
-        return this.posicion;
-    }
     /**
      * Posiciona la ficha en la casilla indicada por <code>Juego</code>
      * @param ficha Objeto que se encarga de devolver los valores de la posicion
