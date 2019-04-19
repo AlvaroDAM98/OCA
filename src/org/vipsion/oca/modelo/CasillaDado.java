@@ -9,12 +9,15 @@ public class CasillaDado extends Casilla{
 
     int desplazamiento;
     
-    public CasillaDado(int posicion, int desplazamiento) {
+    public CasillaDado(int posicion) {
         super(posicion);
-        this.desplazamiento = desplazamiento;
     }
-   
+/**
+ * Metodo que mueve la Ficha pasada como parametro un numero predefinido de posiciones
+ * @param ficha indica la ficha que se esta utilizando en ese momento.
+ */   
 public void posaFicha(Ficha ficha){
+    desplazamiento = Dado.dameNumero();
     ficha.setPosicion(posicion + desplazamiento);
 }    
     
