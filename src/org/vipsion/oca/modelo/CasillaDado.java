@@ -5,18 +5,17 @@
  */
 package org.vipsion.oca.modelo;
 
-/**
- *
- * @author Alvaro
- */
-public class Ddado extends Casilla{
+public class CasillaDado extends Casilla{
 
-    public Ddado(int posicion) {
+    int desplazamiento;
+    
+    public CasillaDado(int posicion, int desplazamiento) {
         super(posicion);
+        this.desplazamiento = desplazamiento;
     }
    
-public void posaFicha(){
-    
+public void posaFicha(Ficha ficha){
+    ficha.setPosicion(posicion + desplazamiento);
 }    
     
 }
