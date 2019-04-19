@@ -8,13 +8,25 @@ import javax.swing.JLabel;
 import javax.swing.LayoutStyle;
 import javax.swing.UIManager;
 import org.vipsion.oca.controlador.Coordinador;
-
+/**
+ * Panel que controla el juego de la OCA
+ *
+ * @author Alvaro Perez
+ * @version 1.0
+ * @see PanelJugador
+ */
 public class OcaGUI extends JFrame {
 
     private List<PanelJugador> panelesJugador;
     private JLabel label;
     private Coordinador coordinador;
 
+    /**
+     * Asigna un coordinador a OcaGUI
+     * 
+     * @see Coordinador
+     * @param coordinador Objeto de tipo Coordinador
+     */
     public void setCoordinador(Coordinador coordinador) {
         this.coordinador = coordinador;
         for (PanelJugador panelJugador : panelesJugador) {
@@ -22,38 +34,64 @@ public class OcaGUI extends JFrame {
         }
     }
 
+    /**
+     * Inicializa OcaGUI
+     */
     public OcaGUI() {
         initComponents();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
+    /**
+     * Asigna un valor al dado
+     * @param turno Jugador al que pertenece el turno
+     * @param valor valor dado por el dado
+     * @see org.vipsion.oca.modelo.Dado
+     */
     public void setValorDado(int turno, int valor) {
         PanelJugador panelJugador = panelesJugador.get(turno);
         panelJugador.setValorDado(valor);
     }
 
+    /**
+     * Asigna una posicion en el tablero para el jugador con el turno actual
+     * @param turno Jugador al que pertenece el turno
+     * @param valor valor dado por el dado
+     */
     public void setPosicionTablero(int turno, int valor) {
         PanelJugador panelJugador = panelesJugador.get(turno);
         panelJugador.setPosicionTablero(valor);
     }
-
+    /**
+     * Termia el turno del jugador
+     * @param turno Jugador al que pertenece el turno
+     */
     public void disableTurno(int turno) {
         PanelJugador panelJugador = panelesJugador.get(turno);
         panelJugador.disableTiraDado();
     }
-
+    /**
+     * 
+     @param turno Jugador al que pertenece el turno 
+     */
     public void sigTurno(int turno) {
         for (PanelJugador panelJugador : panelesJugador) {
             panelJugador.disableTiraDado();
         }
         panelesJugador.get(turno).enableTiraDado();
     }
-
+    /**
+     * Inicia el turno del siguiente jugador
+     @param turno Jugador al que pertenece el turno 
+     */
     public void enableTurno(int turno) {
         PanelJugador panelJugador = panelesJugador.get(turno);
         panelJugador.enableTiraDado();
     }
-
+    /**
+     * Asigna un ganador
+     @param turno Jugador al que pertenece el turno
+     */
     public void setGanador(int turno) {
         PanelJugador panelJugador = panelesJugador.get(turno);
         panelJugador.setGanador();

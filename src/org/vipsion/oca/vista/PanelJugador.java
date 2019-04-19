@@ -13,6 +13,13 @@ import javax.swing.LayoutStyle;
 
 import org.vipsion.oca.controlador.Coordinador;
 
+/**
+ * Interfaz gráfica del juego
+ *
+ * @author Alvaro Perez
+ * @see PanelJugador 
+ */
+
 public class PanelJugador extends JPanel {
 
     private JButton tiraDado;
@@ -25,32 +32,50 @@ public class PanelJugador extends JPanel {
     private Coordinador coordinador;
     private int id;
 
+    /**
+     * Asigna una id pasada por parametro
+     * @param id numero de identificacion
+     */
     public PanelJugador(int id) {
         this.id = id;
         initComponents();
     }
-
+    /**
+     * Asigna un coordinador pasado por parametro
+     * @param coordinador Objeto de tipo Coordinador
+     * @see Coordinador
+     */
     public void setCoordinador(Coordinador coordinador) {
         this.coordinador = coordinador;
     }
-
+    /**
+     * Muestra el valor del dado
+     * @param valor valor de Dado
+     */
     public void setValorDado(int valor) {
         valorDado.setText(Integer.toString(valor));
     }
-
+    /**
+     * Muestra la posicion en el Tablero
+     * @param posicion posicion de una ficha en el tablero
+     */
     public void setPosicionTablero(int posicion) {
         posicionTablero.setText(Integer.toString(posicion));
     }
-
+    /**
+     * 
+     */
     public void disableTiraDado() {
         tiraDado.setEnabled(false);
     }
-
+    /**
+     * Muestra por pantalla el ganador del juego
+     */
     public void setGanador() {
         jLabel1.setText("Jugador " + id + " Ganador!!");
         jLabel1.setForeground(Color.RED);
     }
-
+    
     public void enableTiraDado() {
         tiraDado.setEnabled(true);
     }
@@ -121,6 +146,10 @@ public class PanelJugador extends JPanel {
                                 .addContainerGap(102, Short.MAX_VALUE)));
     }
 
+    /**
+     * Da la ordena de jugar a Coordinador
+     * @param evt ?
+     */
     private void juegaActionPerformed(ActionEvent evt) {
         coordinador.juega();
     }

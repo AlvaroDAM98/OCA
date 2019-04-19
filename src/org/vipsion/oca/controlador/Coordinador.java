@@ -40,7 +40,7 @@ public class Coordinador {
     }
 
     /**
-     *
+     * Inicia la partida
      */
     public void inicia() {
         int turnoInicio = juego.getTurno();
@@ -48,7 +48,7 @@ public class Coordinador {
     }
 
     /**
-     *
+     *Manda una orden al juego para jugar el turno
      */
     public void juega() {
         juego.juega();

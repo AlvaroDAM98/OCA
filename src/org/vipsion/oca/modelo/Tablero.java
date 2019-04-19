@@ -2,12 +2,20 @@ package org.vipsion.oca.modelo;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Crea un tablero que contendrá una lista de Casillas
+ *
+ * @author Alvaro Perez
+ * @see Casilla
+ */
 public class Tablero {
 
     private List<Casilla> casillas;
     private final int numCasillas;
 
+    /**
+     * Crea un objeto de tipo tablero y le asigna las casillas "Oca" y Fin
+     */
     public Tablero() {
         this.numCasillas = 63;
         this.casillas = new ArrayList<>();
@@ -30,6 +38,12 @@ public class Tablero {
         casillas.set(62, new Fin(63));
     }
 
+    /**
+     * Metodo que mueve la ficha del jugador una cantidad de posiciones pasado por parametro
+     * 
+     * @param ficha Objeto de tipo Ficha que pertenece a Jugador
+     * @param numDado Numero generado aleatoriamente mediante el metodo {@link Dado#dameNumero()}
+     */
     public void mueveFicha(Ficha ficha, int numDado) {
 
         int numCasilla = ficha.getPosicion() + numDado;

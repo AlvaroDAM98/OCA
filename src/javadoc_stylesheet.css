@@ -7,20 +7,20 @@ body {
   margin: 0;
 }
 a:link {
-  color: #ef90be;
+  color: #05ff00;
   text-decoration: none;
 }
 a:visited {
-  color: #ef90be;
+  color: #05ff00;
   text-decoration: none;
 }
 a:hover {
-  color: #4da5e4;
+  color: #36cfc5;
   font-weight: bold;
   text-decoration: none;
 }
 a:focus {
-  color: #4da5e4;
+  color: #36cfc5;
   font-weight: bold;
   text-decoration: none;
 }
@@ -110,7 +110,7 @@ sup {
   text-decoration: none;
 }
 .bar {
-  background-color: #0061bb;
+  background-color: rgba(232, 224, 16, 0.7);
   color: #ffffff;
   font-size: 1em;
   height: 1.8em;
@@ -125,7 +125,7 @@ sup {
   color: #bb7a2a;
 }
 .tab {
-  background-color: #0061bb;
+  background-color: rgba(232, 224, 16, 0.7);
   background-position: left top;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -134,7 +134,7 @@ sup {
   width: 5em;
 }
 .topNav {
-  background-color: #0061bb;
+  background-color: rgba(232, 224, 16, 0.7);
   clear: right;
   color: #ffffff;
   height: 2.8em;
@@ -144,11 +144,11 @@ sup {
   width: 100%;
 }
 .topNav a:hover {
-  color: #4da5e4;
+  color: #36cfc5;
   text-decoration: none;
 }
 .bottomNav {
-  background-color: #0061bb;
+  background-color: rgba(232, 224, 16, 0.7);
   clear: right;
   color: #ffffff;
   float: left;
@@ -160,12 +160,12 @@ sup {
   width: 100%;
 }
 .bottomNav a:hover {
-  color: #4da5e4;
+  color: #36cfc5;
   text-decoration: none;
 }
 .subNav {
-  background-color: #006cbb;
-  border-bottom: 1px solid rgba(161, 161, 161, 0.19);
+  background-color: rgba(232, 224, 16, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.19);
   float: left;
   overflow: hidden;
   width: 100%;
@@ -207,7 +207,7 @@ ul.subNavList li {
   text-decoration: none;
 }
 .navBarCell1Rev {
-  background-color: rgba(44, 69, 87, 0.44);
+  background-color: rgba(161, 161, 161, 0.44);
   border-radius: 1px;
   color: #ffffff;
   font-weight: bold;
@@ -253,16 +253,16 @@ ul.subNavList li {
   margin: 5px 0 0 0;
 }
 div.details ul.blocklist ul.blocklist ul.blocklist li.blocklist h4 {
-  background-color: #006cbb;
-  border-bottom: 1px solid rgba(161, 161, 161, 0.19);
-  border-top: 1px solid rgba(161, 161, 161, 0.19);
+  background-color: rgba(232, 224, 16, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+  border-top: 1px solid rgba(255, 255, 255, 0.19);
   margin: 0 0 6px -8px;
   padding: 2px 5px;
 }
 div.details ul.blocklist ul.blocklist ul.blockListLast li.blocklist h4 {
-  background-color: #006cbb;
-  border-bottom: 1px solid rgba(161, 161, 161, 0.19);
-  border-top: 1px solid rgba(161, 161, 161, 0.19);
+  background-color: rgba(232, 224, 16, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+  border-top: 1px solid rgba(255, 255, 255, 0.19);
   margin: 0 0 6px -8px;
   padding: 2px 5px;
 }
@@ -273,18 +273,18 @@ ul.blockList {
 ul.blockList ul.blocklist ul.blocklist li.blocklist {
   background-color: #ffffff;
   border-top: none;
-  border: 1px solid rgba(161, 161, 161, 0.19);
+  border: 1px solid rgba(255, 255, 255, 0.19);
   padding: 0 0 5px 8px;
 }
 ul.blockList ul.blocklist ul.blocklist li.blocklist h3 {
-  background-color: #006cbb;
-  border-bottom: 1px solid rgba(161, 161, 161, 0.19);
-  border-top: 1px solid rgba(161, 161, 161, 0.19);
+  background-color: rgba(232, 224, 16, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+  border-top: 1px solid rgba(255, 255, 255, 0.19);
   margin: 0 0 6px -8px;
   padding: 2px 5px;
 }
 ul.blockList ul.blocklist ul.blocklist ul.blockList li.blocklist {
-  border-bottom: 1px solid rgba(161, 161, 161, 0.19);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.19);
   border: none;
   margin-left: 0;
   padding-bottom: 15px;
@@ -296,8 +296,8 @@ ul.blockList ul.blocklist ul.blocklist ul.blockList li.blockListLast {
   padding-bottom: 0;
 }
 ul.blockList ul.blocklist li.blockList {
-  background-color: rgba(44, 69, 87, 0.44);
-  border: 1px solid rgba(161, 161, 161, 0.19);
+  background-color: rgba(161, 161, 161, 0.44);
+  border: 1px solid rgba(255, 255, 255, 0.19);
   padding: 0px 20px 5px 10px;
 }
 ul.blockList ul.blocklist li.blockList h3 {
@@ -311,7 +311,7 @@ ul.blockList ul.blocklist li.blockList table {
 ul.blockList ul.blocklist ul.blockListLast li.blocklist {
   background-color: #ffffff;
   border-top: none;
-  border: 1px solid rgba(161, 161, 161, 0.19);
+  border: 1px solid rgba(255, 255, 255, 0.19);
   padding: 0 0 5px 8px;
 }
 ul.blockList li.blockList {
@@ -322,8 +322,8 @@ ul.blockList li.blockList h2 {
   padding: 0px 0 20px 0;
 }
 ul.blockList ul.blockListLast li.blocklist {
-  background-color: rgba(44, 69, 87, 0.44);
-  border: 1px solid rgba(161, 161, 161, 0.19);
+  background-color: rgba(161, 161, 161, 0.44);
+  border: 1px solid rgba(255, 255, 255, 0.19);
   padding: 0px 20px 5px 10px;
 }
 .contentContainer,
@@ -342,7 +342,7 @@ ul.blockList ul.blockListLast li.blocklist {
 .indexContainer h2 {
   font-size: 1.1em;
   padding: 10px;
-  background-color: #ef90be;
+  background-color: #05ff00;
 }
 .indexContainer ul {
   margin: 0;
@@ -353,7 +353,7 @@ ul.blockList ul.blockListLast li.blocklist {
   padding: 0.3em;
 }
 .contentContainer .description dl dt {
-  color: #0084bb;
+  color: #7dfc42;
   font-size: 1.1em;
   font-weight: bold;
   margin: 10px 0 0 0;
@@ -365,7 +365,7 @@ ul.blockList ul.blockListLast li.blocklist {
   border-bottom: none;
 }
 .contentContainer .details dl dt {
-  color: #0084bb;
+  color: #7dfc42;
   font-size: 1.1em;
   font-weight: bold;
   margin: 10px 0 0 0;
@@ -377,14 +377,14 @@ ul.blockList ul.blockListLast li.blocklist {
   border-bottom: none;
 }
 .contentContainer table {
-  border-bottom: 1px solid rgba(161, 161, 161, 0.19);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.19);
   width: 100%;
 }
 .contentContainer ul li table {
   width: 100%;
 }
 .serializedFormContainer dl dt {
-  color: #0084bb;
+  color: #7dfc42;
   font-size: 1.1em;
   font-weight: bold;
   margin: 10px 0 0 0;
@@ -429,14 +429,14 @@ ul.blockListLast li.blocklist {
   margin-bottom: 25px;
 }
 .classUseContainer table {
-  border-bottom: 1px solid rgba(161, 161, 161, 0.19);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.19);
   width: 100%;
 }
 .classUseContainer ul li table {
   width: 100%;
 }
 .constantValuesContainer table {
-  border-bottom: 1px solid rgba(161, 161, 161, 0.19);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.19);
   width: 100%;
 }
 .constantValuesContainer ul li table {
@@ -495,7 +495,7 @@ caption a:visited {
 .summary caption span,
 .classUseContainer caption span,
 .constantValuesContainer caption span {
-  background-color: #0061bb;
+  background-color: rgba(232, 224, 16, 0.7);
   display: block;
   float: left;
   height: 18px;
@@ -509,7 +509,7 @@ caption a:visited {
 .summary .tabEnd,
 .classUseContainer .tabEnd,
 .constantValuesContainer .tabEnd {
-  background-color: #0061bb;
+  background-color: rgba(232, 224, 16, 0.7);
   background-position: top right;
   background-repeat: no-repeat;
   border-top-right-radius: 6px;
@@ -539,9 +539,9 @@ th.colFirst,
 th.colLast,
 th.colOne,
 .constantValuesContainer th {
-  background: #006cbb;
-  border-bottom: 1px solid rgba(161, 161, 161, 0.19);
-  border-top: 1px solid rgba(161, 161, 161, 0.19);
+  background: rgba(232, 224, 16, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+  border-top: 1px solid rgba(255, 255, 255, 0.19);
   padding: 3px 3px 3px 7px;
   text-align: left;
   color: #ffffff;
@@ -565,26 +565,26 @@ td.colLast a:hover,
   font-weight: bold;
 }
 td.colFirst {
-  border-left: 1px solid rgba(161, 161, 161, 0.19);
+  border-left: 1px solid rgba(255, 255, 255, 0.19);
   white-space: nowrap;
 }
 th.colFirst {
-  border-left: 1px solid rgba(161, 161, 161, 0.19);
+  border-left: 1px solid rgba(255, 255, 255, 0.19);
   white-space: nowrap;
 }
 td.colLast {
-  border-right: 1px solid rgba(161, 161, 161, 0.19);
+  border-right: 1px solid rgba(255, 255, 255, 0.19);
 }
 th.colLast {
-  border-right: 1px solid rgba(161, 161, 161, 0.19);
+  border-right: 1px solid rgba(255, 255, 255, 0.19);
 }
 td.colOne {
-  border-left: 1px solid rgba(161, 161, 161, 0.19);
-  border-right: 1px solid rgba(161, 161, 161, 0.19);
+  border-left: 1px solid rgba(255, 255, 255, 0.19);
+  border-right: 1px solid rgba(255, 255, 255, 0.19);
 }
 th.colOne {
-  border-left: 1px solid rgba(161, 161, 161, 0.19);
-  border-right: 1px solid rgba(161, 161, 161, 0.19);
+  border-left: 1px solid rgba(255, 255, 255, 0.19);
+  border-right: 1px solid rgba(255, 255, 255, 0.19);
 }
 table.overviewSummary {
   margin-left: 0px;
@@ -631,6 +631,8 @@ h1.hidden {
 .strong {
   font-weight: bold;
 }
-.juego {
+
+.juego{
+    text-shadow: 2px 2px yellow;
     font-size: 50px;
 }
