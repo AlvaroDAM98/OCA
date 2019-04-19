@@ -37,7 +37,7 @@ public class Tablero {
         casillas.set(40, new Oca(41, 4));
         casillas.set(49, new Oca(50, 4));
         casillas.set(54, new OcaFin(59, 4));
-        casillas.set(60, new CasillaCalavera(60));
+      //  casillas.set(60, new CasillaCalavera(60));
         casillas.set(62, new Fin(63));
     }
 

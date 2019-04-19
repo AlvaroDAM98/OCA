@@ -20,7 +20,7 @@ public class Casilla {
         this.posicion = posicion;
     }
     /**
-     * Posiciona la ficha en la casilla indicada por <code>Juego</code>
+     * Posiciona la ficha en la casilla indicada por Juego.
      * @param ficha Objeto que se encarga de devolver los valores de la posicion
      * en la que se encuentra, turnos extra y si ha terminado o no
      */
